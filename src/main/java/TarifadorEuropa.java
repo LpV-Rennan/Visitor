@@ -1,5 +1,9 @@
 public class TarifadorEuropa implements Tarifador{
 
+    public float tarifar(Produto produto){
+        return produto.aceitar(this);
+    }
+
     @Override
     public float tarifarCigarro(Cigarro cigarro) {
         return cigarro.getValor() * 0.8f;

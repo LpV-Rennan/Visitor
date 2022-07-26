@@ -1,6 +1,6 @@
 public class TarifadorBrasil implements Tarifador{
 
-    float tarifar(Produto produto){
+    public float tarifar(Produto produto){
         return produto.aceitar(this);
     }
 
